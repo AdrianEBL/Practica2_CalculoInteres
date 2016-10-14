@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:hint="@string/main.hint.cap"
+        android:id="@+id/capital"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="@string/main.hint.inputCap"
+        android:ems="15"
+        android:id="@+id/inputCapital"
+        android:layout_below="@id/capital"
+        android:layout_alignStart="@id/capital"
+        android:layout_alignLeft="@id/capital"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/main.hint.Percen"
+        android:id="@+id/percentage"
+        android:layout_below="@id/inputCapital"
+        android:layout_alignStart="@id/inputCapital"
+        android:layout_alignLeft="@id/inputCapital"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="@string/main.hint.inputPercen"
+        android:ems="15"
+        android:id="@+id/inputPercentage"
+        android:layout_below="@id/percentage"
+        android:layout_alignStart="@id/percentage"
+        android:layout_alignLeft="@id/percentage"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/main.hint.perio"
+        android:id="@+id/Period"
+        android:layout_below="@id/inputPercentage"
+        android:layout_alignStart="@id/inputPercentage"
+        android:layout_alignLeft="@id/inputPercentage"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="@string/main.hint.inputPerio"
+        android:ems="15"
+        android:id="@+id/inputPeriod"
+        android:layout_below="@id/Period"
+        android:layout_alignStart="@id/Period"
+        android:layout_alignLeft="@id/Period"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/main.button.calcu"
+        android:id="@+id/btnCalculate"
+        android:layout_below="@id/inputPeriod"
+        android:layout_alignStart="@id/inputPeriod"
+        android:layout_alignLeft="@id/inputPeriod"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/separator"
+        android:layout_below="@+id/btnCalculate"
+        android:layout_alignStart="@+id/btnCalculate"
+        android:layout_alignLeft="@+id/capital"
+        android:layout_alignRight="@id/capital"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etTotal"
+        android:layout_below="@id/separator"
+        android:layout_alignStart="@id/btnCalculate"
+        android:layout_alignLeft="@id/btnCalculate"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etInterest"
+        android:layout_below="@id/etTotal"
+        android:layout_alignStart="@id/etTotal"
+        android:layout_alignLeft="@id/etTotal"/>
+
+</RelativeLayout>

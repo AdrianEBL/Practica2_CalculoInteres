@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Calculo de Intereses</string>
+    <string name="main.hint.cap">Ingresa el monto del Capital</string>
+    <string name="main.hint.inputCap">Capital</string>
+    <string name="main.hint.Percen">Ingresa el porcentaje del interes</string>
+    <string name="main.hint.inputPercen">% de interes</string>
+    <string name="main.hint.perio">Ingresa el periodo de tiempo</string>
+    <string name="main.hint.inputPerio"># de meses</string>
+    <string name="main.button.calcu">Calcular Intereses</string>
+
+
+</resources>
